@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body bgcolor="lightblue">
+        <script lang="JavaScript">
+            var l,L,s,S,A,a,R,restart;
+            function cal(){
+            L=prompt("Enter the larger Number :");
+            l=parseInt(L);
+            S=prompt("Enter the smaller Number :");
+            s=parseInt(S);
+            A=prompt("Action to be done( + | - | * | / )");
+            if (A=="+"){
+                a=1;
+            }
+            if (A=="-"){
+                a=2;
+            }
+            if (A=="*"){
+                a=3;
+            }
+            if (A=="/"){
+                a=4;
+            }
+            if(a==1){
+                R=l+s;
+                alert("Required result is "+R);
+            }
+            if(a==2){
+                R=l-s;
+                alert("Required result is "+R); 
+            }
+            if(a==3){
+                R=l*s;
+                alert("Required result is "+R);
+            }
+            if(a==4){
+                R=l/s;
+                alert("Required answer is "+R);
+
+            }
+            restart=prompt("Do you want to calculate again ( Y / N ) ?");
+
+            if (restart=="Y"||restart=="y"||restart=="Yes"||restart=="yes"){
+                     cal();
+            } else {
+                alert("Thank you for using.");
+            }
+
+        }
+         cal();              
+
+        </script>
+        <font color="#000435" size="10px">
+        <h1>Calculator</h1>
+        <hr color="black"><br>
+        By <h2>Omkar Suhas Indulkar</h2>
+    </font>
+    </body>
+</html>
